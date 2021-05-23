@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WhichPlant</string>
+    <string name="pH_estimation">추정 pH: 6.01, 신뢰구간(95%): [5.87, 6.61]\n주변 중금속 오염(Mn)이 의심됩니다.\n사진의 식물(흰여뀌)를 찾으면 보고 부탁드립니다.\n흰여뀌는 Mn 오염 지역에서 서식 가능한 식물입니다!</string>
+    <string name="plant_prediction">이 식물은 소나무입니다!</string>
+    <string name="USDA_result">USDA\'s Natural Resources Conservation Service에 따르면\n주위의 토양 산성도는 Slightly acidic(약간 산성)입니다.</string>
+    <string name="connection_wating">배경을 수동으로 제거할지 선택하세요.\n</string>
+    <string name="background_omit">배경 제거 여부</string>
+    <string name="start_connection">통신 개시</string>
+    <string name="result_chk_btn">결과 확인</string>
+</resources>

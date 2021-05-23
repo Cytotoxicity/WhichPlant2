@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocketSending">
+
+    <ImageView
+        android:id="@+id/image_cam"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/explain_connection"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explain_connection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:text="@string/connection_wating"
+        android:textAlignment="center"
+        android:textSize="20dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_cam"
+        />
+
+    <CheckBox
+        android:id="@+id/ckb_background_omit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/background_omit"
+
+        app:layout_constraintTop_toBottomOf="@id/explain_connection"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckb_background_omit"
+        app:srcCompat="@drawable/whichplant_connect" />
+
+    <Button
+        android:id="@+id/btn_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/image_server"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_gto_res"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:text="@string/start_connection" />
+
+    <Button
+        android:id="@+id/btn_gto_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_server"
+        app:layout_constraintLeft_toRightOf="@+id/btn_connection"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:text="@string/result_chk_btn"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
